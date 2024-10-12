@@ -57,6 +57,11 @@
   .parallax {
     height: 300px;
   }
+  #clock {
+    font-size: 32px;
+    letter-spacing: 0.1rem;
+    margin: 0;
+  }
 }
 @media (max-width: 750px) {
   p {
@@ -64,6 +69,11 @@
   }
   .parallax {
     height: 300px;
+  }
+  #clock {
+    font-size: 32px;
+    letter-spacing: 0.1rem;
+    margin: 0;
   }
 }
 @media (max-width: 450px) {
@@ -75,6 +85,11 @@
   }
   .parallax {
     height: 300px;
+  }
+  #clock {
+    font-size: 32px;
+    letter-spacing: 0.1rem;
+    margin: 0;
   }
 }
 @media (max-width: 412px) {
