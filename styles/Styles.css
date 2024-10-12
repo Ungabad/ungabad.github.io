@@ -35,6 +35,7 @@
   font-family: "Libre Baskerville", serif, sans-serif;
   font-style: italic;
 }
+
 .btn-primary {
   background-color: var(--tertiary-color);
   border-color: var(--tertiary-color);
@@ -71,6 +72,20 @@
     height: 300px;
   }
 }
+@media (max-width: 412px) {
+  .navbar {
+      max-width: 65%;
+  }
+  p {
+    font-size: 16px;
+  }
+  .accordion-body p {
+    font-size: 9px;
+  }
+  .parallax {
+    height: 300px;
+  }
+}
 
 /* Responsive Text Sizes End */
 
@@ -90,9 +105,6 @@
 }
 .navbar-toggler span {
   color: var(--tertiary-color);
-}
-.navbar-nav {
-  margin-left: 20px;
 }
 .nav-item .nav-link {
   font-size: 16px;
@@ -205,6 +217,8 @@
   .home .content p {
     font-size: 13px;
   }
+  .parallax {
+    min-height: 100vh;
 }
 /* Home Section End */
 
