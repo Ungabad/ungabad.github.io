@@ -35,7 +35,6 @@
   font-family: "Libre Baskerville", serif, sans-serif;
   font-style: italic;
 }
-
 .btn-primary {
   background-color: var(--tertiary-color);
   border-color: var(--tertiary-color);
@@ -74,7 +73,7 @@
 }
 @media (max-width: 412px) {
   * {
-    max-width: 95%;
+    max-width: 97%;
   }
 }
 
@@ -96,6 +95,9 @@
 }
 .navbar-toggler span {
   color: var(--tertiary-color);
+}
+.navbar-nav {
+  margin-left: 20px;
 }
 .nav-item .nav-link {
   font-size: 16px;
@@ -208,8 +210,6 @@
   .home .content p {
     font-size: 13px;
   }
-  .parallax {
-    min-height: 100vh;
 }
 /* Home Section End */
 
