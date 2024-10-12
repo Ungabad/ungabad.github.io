@@ -114,6 +114,15 @@
 /* Navbar End */
 
 /* Home Section Start */
+.main-text h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px var(--secondary-color);
+}
+.main-text h1 span {
+  color: var(--tertiary-color);
+}
 .home {
   width: 90%;
   height: 70vh;
@@ -199,32 +208,71 @@
 }
 /* Home Section End */
 
-/* Places Section Start */
-.main-text h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-weight: 600;
-  text-shadow: 0px 1px 1px var(--secondary-color);
+/* Skills Section Start */
+.skills {
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: var(--primary-color);
 }
-.main-text h1 span {
+.skills p img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.skills .card {
+  border-radius: 10px;
+}
+.skills .card img {
+  border-radius: 10px;
+}
+.skills h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
   color: var(--tertiary-color);
 }
-.places .card {
+.skills p {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+@media (max-width: 765px) {
+  .skills {
+    padding: 0px;
+  }
+}
+.parallax {
+  /* The image used */
+  background-image: url("/images/skill.svg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Skills Section End */
+
+/* Places Section Start */
+.projects .card {
   border-radius: 5px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.places .card img {
+.projects .card img {
   border-radius: 5px;
 }
-.places .card .card-body {
+.projects .card .card-body {
   background: transparent;
 }
-.places .card .card-body h3 {
+.projects .card .card-body h3 {
   font-size: 25px;
   font-weight: 600;
 }
-.places .card .card-body p {
+.projects .card .card-body p {
   font-size: 15px;
 }
 .checked {
@@ -233,10 +281,10 @@
 .star i {
   font-size: 15px;
 }
-.places .card .card-body h6 {
+.projects .card .card-body h6 {
   font-size: 20px;
 }
-.places .card .card-body a {
+.projects .card .card-body a {
   padding: 10px;
   text-decoration: none;
   background: var(--tertiary-color);
@@ -250,6 +298,8 @@
 }
 .carousel-inner img {
   margin: auto;
+  width: 150px;
+  height: 150px;
 }
 
 /* Changing the Color of the Arrows */
@@ -280,50 +330,6 @@
 /* Changing the Color of the Arrows End */
 
 /* Places Section End */
-
-/* About Section Start */
-.about {
-  padding: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background: var(--primary-color);
-}
-.image {
-}
-.about .card {
-  border-radius: 10px;
-}
-.about .card img {
-  border-radius: 10px;
-}
-.about h2 {
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: var(--tertiary-color);
-}
-.about p {
-  font-weight: 500;
-  color: var(--secondary-color);
-}
-@media (max-width: 765px) {
-  .about {
-    padding: 0px;
-  }
-}
-.parallax {
-  /* The image used */
-  background-image: url("/images/skill.svg");
-
-  /* Set a specific height */
-  min-height: 600px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* About Section End */
 
 /* Contact Section Start */
 #contact .btn-primary {
