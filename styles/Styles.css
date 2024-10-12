@@ -1,0 +1,366 @@
+:root {
+  --primary-color: #414141 !important;
+  --secondary-color: #e9e9e9 !important;
+  --tertiary-color: #8b47aa !important;
+  --quaternary-color: #2e2e2e !important;
+}
+/* Google Fonts */
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* End Google Fonts */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Libre Baskerville", serif, sans-serif;
+  font-style: italic;
+}
+.btn-primary {
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--tertiary-color);
+}
+/* Responsive Text Sizes Start */
+@media (max-width: 850px) {
+  p {
+    font-size: 26px;
+  }
+  .parallax {
+    height: 300px;
+  }
+}
+@media (max-width: 750px) {
+  p {
+    font-size: 25px;
+  }
+  .parallax {
+    height: 300px;
+  }
+}
+@media (max-width: 450px) {
+  p {
+    font-size: 16px;
+  }
+  .accordion-body p {
+    font-size: 9px;
+  }
+  .parallax {
+    height: 300px;
+  }
+}
+
+/* Responsive Text Sizes End */
+
+/* Navbar Start */
+#navbar {
+  background-color: var(--primary-color);
+}
+#logo {
+  font-size: 36px;
+  font-weight: 550;
+  color: var(--secondary-color);
+  text-shadow: 0px 1px 1px var(--secondary-color);
+  margin-bottom: 5px;
+}
+#logo span {
+  color: var(--tertiary-color);
+}
+.navbar-toggler span {
+  color: var(--tertiary-color);
+}
+.navbar-nav {
+  margin-left: 20px;
+}
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0 0.5s ease;
+}
+.nav-item .nav-link:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+#navbar form button {
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  border: none;
+}
+/* Navbar End */
+
+/* Home Section Start */
+.home {
+  width: 90%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(https://kaustubhodak.me/_next/image?url=%2Flanding.svg&w=1080&q=75);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+.home .content h5 {
+  color: var(--secondary-color);
+  font-size: 38px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px var(--tertiary-color);
+}
+.home .content h1 {
+  color: var(--primary-color);
+  font-size: 70px;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px var(--secondary-color);
+  margin-top: 5px;
+}
+.changecontent::after {
+  content: " ";
+  color: var(--tertiary-color);
+  text-shadow: 0px 1px 1px var(--secondary-color);
+  animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+  0% {
+    content: "Full-stack developer 🌐";
+  }
+  25% {
+    content: "Beginner in devops ♾️";
+  }
+  50% {
+    content: "Just getting started 📈";
+  }
+  100% {
+    content: "Cross-platform developer 📱💻";
+  }
+}
+.home .content p {
+  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px var(--secondary-color);
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.home .content a {
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.home .content a:hover {
+  color: var(--primary-color);
+}
+@media (max-width: 850px) {
+  .home {
+    background-position: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .home .content h5 {
+    font-size: 25px;
+  }
+  .home .content h1 {
+    font-size: 38px;
+  }
+  .home .content p {
+    font-size: 13px;
+  }
+}
+/* Home Section End */
+
+/* Places Section Start */
+.main-text h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px var(--secondary-color);
+}
+.main-text h1 span {
+  color: var(--tertiary-color);
+}
+.places .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.places .card img {
+  border-radius: 5px;
+}
+.places .card .card-body {
+  background: transparent;
+}
+.places .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.places .card .card-body p {
+  font-size: 15px;
+}
+.checked {
+  color: var(--tertiary-color);
+}
+.star i {
+  font-size: 15px;
+}
+.places .card .card-body h6 {
+  font-size: 20px;
+}
+.places .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+.carousel-item {
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carousel-inner img {
+  margin: auto;
+}
+
+/* Changing the Color of the Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  filter: invert(100%);
+  outline: white;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-image: none;
+}
+
+/* .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+} */
+/* Changing the Color of the Arrows End */
+
+/* Places Section End */
+
+/* About Section Start */
+.about {
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: var(--primary-color);
+}
+.image {
+}
+.about .card {
+  border-radius: 10px;
+}
+.about .card img {
+  border-radius: 10px;
+}
+.about h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--tertiary-color);
+}
+.about p {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+@media (max-width: 765px) {
+  .about {
+    padding: 0px;
+  }
+}
+.parallax {
+  /* The image used */
+  background-image: url("/images/skill.svg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* About Section End */
+
+/* Contact Section Start */
+#contact .btn-primary {
+  text-align: center;
+  margin: 50px;
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+#contact {
+  width: 100%;
+  text-align: center;
+}
+#contact h1 {
+  font-weight: 600;
+  padding-top: 30px;
+  text-shadow: 0px 1px 1px var(--secondary-color);
+}
+#contact h1 span {
+  color: var(--tertiary-color);
+}
+.social-links i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  margin: 0 0 10px 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover {
+  background: var(--tertiary-color);
+}
+/* Contact Section End */
