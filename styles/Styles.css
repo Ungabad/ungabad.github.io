@@ -73,17 +73,10 @@
   }
 }
 @media (max-width: 412px) {
-  .navbar {
-      max-width: 65%;
-  }
-  p {
-    font-size: 16px;
-  }
-  .accordion-body p {
-    font-size: 9px;
-  }
-  .parallax {
-    height: 300px;
+  * {
+    max-width: 95%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
